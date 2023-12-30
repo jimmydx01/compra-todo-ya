@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir Producto - CarpiShopss</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body>
+
+    <div class="wrapper">
+        <header class="header-mobile">
+            <h1 class="logo">CarpiShopss</h1>
+        </header>
+        <main>
+            <h2 class="titulo-principal">Subir Nuevo Producto</h2>
+            <form action="guardar_producto.php" method="post" enctype="multipart/form-data">
+                <label for="titulo">Título del Producto:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                <label for="precio">Precio del Producto:</label>
+                <input type="number" id="precio" name="precio" required>
+                <label for="categoria">Categoría:</label>
+                <select id="categoria" name="categoria">
+                    <option value="Ropa">Ropa</option>
+                    <option value="Tegnologuia">Tegnologuia</option>
+                    <option value="Vehiculos">Vehiculos</option>
+                </select>
+                <label for="imagen">Imagen del Producto:</label>
+                <input type="file" id="imagen" name="imagen" accept=".jpg, .jpeg, .png" required>
+                <button type="submit" class="boton-menu boton-subir">Subir Producto</button>
+            </form>
+        </main>
+    </div>
+
+    <script src="./js/formulario.js"></script>
+</body>
+</html>
